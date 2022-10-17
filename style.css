@@ -24,8 +24,6 @@ body {
 .square {
   background-color: #44475a;
   box-shadow: 0 0 2px #6272a4;
-  height: 50px;
-  width: 50px;
   transition: 2s ease;
 }
 
