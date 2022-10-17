@@ -1,5 +1,6 @@
 const container = document.getElementById('container')
 const sizeBtn = document.getElementById('size-btn')
+const clearBtn = document.getElementById('clear-btn')
 const colors = ['#8be9fd', '#50fa7b', '#ffb86c', '#ff79c6', '#bd93f9', '#ff5555', '#f1fa8c']
 
 let gridSize = 0
@@ -37,6 +38,15 @@ sizeBtn.addEventListener('click', () => {
 
   container.replaceChildren()
   createGrid()
+})
+
+clearBtn.addEventListener('click', () => {
+  const squares = document.querySelectorAll('.square')
+
+  squares.forEach(square => {
+    square.style.background = '#44475a'
+    square.style.boxShadow = '0 0 2px #6272a4'
+  })
 })
 
 createGrid()
